@@ -7,8 +7,8 @@
 <br/>
 
 ## Question Generation App [*(sample in and out)*](#1)
-The question generation App generates questions using description and keywords. The AI model understands context of the text description and generates questions related to each keyword. The model is wrapped to Flask API which listen on port *4000*, and route path of *qg_bart*. <br/>
-The model is fine-tunned using *Facebook AI's BART architecture* with *KorQuAD dataset* and pushed in docker-hub *mj0098/qg-bart:1.2*.
+The question generation App generates questions using description and keywords. The AI model understands context of the text description and generates questions related to each keyword. The model is wrapped to Flask API which listens on port *4000*, and route path of *qg_bart*. <br/>
+The model is fine-tuned using *Facebook AI's BART architecture* with *KorQuAD dataset* and pushed in docker-hub *mj0098/qg-bart:1.2*.
 
 <br/>
 
@@ -21,7 +21,7 @@ The model is fine-tunned using *Facebook AI's BART architecture* with *KorQuAD d
 
 2. Generate Jenkins Pipeline item
 - set *Poll SCM* to monitor `GitHub repository` modification
-    - cron job 10 minutes periodically (*/10 * * * *)
+    - cron job for every 10 minutes (*/10 * * * *)
 - set *pipeline script from SCM* with `GitHub repository`
 
 
@@ -29,7 +29,7 @@ The model is fine-tunned using *Facebook AI's BART architecture* with *KorQuAD d
     ```shell
     sed -i 's/replicas: 1/replicas: 3/' qg-flask.yaml
     ```
-4. Check SLACK alarms
+4. Check Slack alarms
 5. Test Kubernetes Service exposes Flask App correctly
 
 <br/>
@@ -49,7 +49,7 @@ The model is fine-tunned using *Facebook AI's BART architecture* with *KorQuAD d
 
 <br/>
 
-- <a id="1">Question Generation App exposed by kubernetes service on port 4000</a>
+- <a id="1">Question Generation App exposed by kubernetes service, external ip of 192.168.1.12 port of 4000</a>
     - console output using *curl* request
     <img src="./results/5.PNG"> <br/>
 
