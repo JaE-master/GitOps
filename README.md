@@ -38,7 +38,7 @@ The model is fine-tuned using *Facebook AI's BART architecture* with *KorQuAD da
 - After initial pipeline run
 <img src="./results/1.PNG">
 
-- After scale up replicas in GitHub repo (**GitOps** auto deploy)
+- After scale up replicas pushed in GitHub repository (**GitOps** auto deploy)
 <img src="./results/2.PNG">
 
 - Jenkins result
@@ -49,13 +49,13 @@ The model is fine-tuned using *Facebook AI's BART architecture* with *KorQuAD da
 
 <br/>
 
-- <a id="1">Question Generation App exposed by kubernetes service, external ip of 192.168.1.12 port of 4000</a>
+- <a id="1">Question Generation App exposed by kubernetes service</a> *(external-ip : 192.168.1.12 , port : 4000)*
     - console output using *curl* request
     <img src="./results/5.PNG"> <br/>
 
     - ***POSTMAN*** output
 
-<img src="./results/6.PNG">
+    <img src="./results/6.PNG">
 
 <br/>
 
