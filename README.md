@@ -1,7 +1,7 @@
 # GitOps
 - CI/CD implementation using Jenkins pipeline on Kubernetes cluster
 - GitOps implementation using Poll SCM in Jenkins
-- Slack alarams when deployed
+- Slack alarms when deployed
 - Deploy a Flask API of question generation App using Kubernetes LoadBalancer Service
 
 <br/>
